@@ -3,3 +3,6 @@ from .role_serializer import RoleSerializer
 from .permission_serializer import PermissionSerializer
 from .document_serializer import DocumentSerializer
 from .change_password_serializer import ChangePasswordSerializer
+from .pcn_serializer import ProductSerializer
+from .pcn_serializer import ContainerSerializer
+from .pcn_serializer import NotificationSerializer

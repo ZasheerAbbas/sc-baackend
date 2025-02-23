@@ -39,5 +39,5 @@ def populate():
 
 
 if __name__ == '__main__':
-    print("Starting AFP population script...")
+    print("Starting SC population script...")
     populate()

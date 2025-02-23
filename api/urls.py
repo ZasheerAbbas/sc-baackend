@@ -7,6 +7,9 @@ routers = DefaultRouter()
 routers.register('roles', views.RoleViewSet, basename='role')
 routers.register('users', views.UserViewSet, basename='user')
 routers.register('users-unpaginated', views.UserListViewSet, basename='users')
+routers.register('products', views.ProductViewSet, basename='product')
+routers.register('containers', views.ContainerViewSet, basename='container')
+routers.register('notifications', views.NotificationViewSet, basename='noticfication')
 
 urlpatterns = [
     path('login', views.LoginView.as_view()),
@@ -14,8 +17,6 @@ urlpatterns = [
     path('refresh', views.RefreshView.as_view()),
     path('current', views.CurrentUserView.as_view()),
     path('permissions', views.PermissionListView.as_view()),
-    # path('uploadPetitionApplicationData', views.PetitionApplicationListView.as_view()),
-    # path('downloadPetitionApplicationData', views.PetitionApplicationDownloadView.as_view()),
     path('profile/<int:pk>', views.ProfileUpdateView.as_view()),
     path('changepassword',views.UserChangePasswordView.as_view()),
 ]
